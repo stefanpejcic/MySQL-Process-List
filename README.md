@@ -1,5 +1,5 @@
 === MySQL Process List ===
-Contributors: stefanpejcic
+Contributors: stefanpejcic, alexclassroom
 Donate link: https://plugins.club/wordpress/mysql-process-list-wordpress-plugin/
 Tags: MySQL, process list, query
 Requires at least: 5.8
