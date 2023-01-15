@@ -17,35 +17,35 @@ function pluginsclub_mpc_mysql_process_list_menu() {
 // Render the custom admin page
 function pluginsclub_mpc_render_mysql_process_list_page() {
   if ( ! current_user_can( 'manage_options' ) ) {
-    wp_die( 'You do not have sufficient permissions to access this page.' );
+	  wp_die(__('You do not have sufficient permissions to access this page.', 'mysql-process-list' ));
   }
   ?>
   <div class="wrap">
-    <h1>MySQL Process List</h1>
-    <p>The MySQL process list indicates the operations currently being performed by the set of threads executing within the website.</p>
+    <h1><?php esc_html_e( 'MySQL Process List', 'mysql-process-list' ); ?></h1>
+	  <p><?php esc_html_e( 'The MySQL process list indicates the operations currently being performed by the set of threads executing within the website.', 'mysql-process-list' ); ?></p>
     <div id="refresh-controls" style="display:none">
       Refresh every:
       <select id="refresh-interval">
-        <option value="5">5 seconds</option>
-        <option value="10" selected>10 seconds</option>
-        <option value="30">30 seconds</option>
-        <option value="60">60 seconds</option>
-        <option value="120">2 minutes</option>
-        <option value="300">5 minutes</option>
-        <option value="600">10 minutes</option>
+	      <option value="5"><?php esc_html_e( '5 seconds', 'mysql-process-list' ); ?></option>
+	      <option value="10" selected><?php esc_html_e( '10 seconds', 'mysql-process-list' ); ?></option>
+	      <option value="30"><?php esc_html_e( '30 seconds', 'mysql-process-list' ); ?></option>
+	      <option value="60"><?php esc_html_e( '60 seconds', 'mysql-process-list' ); ?></option>
+	      <option value="120"><?php esc_html_e( '2 minutes', 'mysql-process-list' ); ?></option>
+	      <option value="300"><?php esc_html_e( '5 minutes', 'mysql-process-list' ); ?></option>
+	      <option value="600"><?php esc_html_e( '10 minutes', 'mysql-process-list' ); ?></option>
       </select>
     </div>
     <table class="wp-list-table widefat fixed striped">
       <thead>
         <tr>
-          <th>ID</th>
-          <th>User</th>
-          <th>Host</th>
-          <th>DB</th>
-          <th>Command</th>
-          <th>Time</th>
-          <th>State</th>
-          <th>Info</th>
+		<th><?php esc_html_e( 'ID', 'mysql-process-list' ); ?></th>
+		<th><?php esc_html_e( 'User', 'mysql-process-list' ); ?></th>
+		<th><?php esc_html_e( 'Host', 'mysql-process-list' ); ?></th>
+		<th><?php esc_html_e( 'DB', 'mysql-process-list' ); ?></th>
+		<th><?php esc_html_e( 'Command', 'mysql-process-list' ); ?></th>
+		<th><?php esc_html_e( 'Time', 'mysql-process-list' ); ?></th>
+		<th><?php esc_html_e( 'State', 'mysql-process-list' ); ?></th>
+		<th><?php esc_html_e( 'Info', 'mysql-process-list' ); ?></th>
         </tr>
       </thead>
       <tbody id="process-list">
