@@ -3,9 +3,9 @@
  * Plugin Name:       MySQL Process List
  * Plugin URI:           https://plugins.club/wordpress/mysql-process-list-wordpress-plugin/
  * Description:         Show MySQL Process list under Tools > MySQL Process List
- * Version:               1.0
+ * Version:               1.1
  * Author:                Stefan Pejcic
- * Author URI:         https://plugins.club/wordpress/mysql-process-list-wordpress-plugin/
+ * Author URI:         https://plugins.club/
  */
  
 // Add a custom menu item to the Tools menu
