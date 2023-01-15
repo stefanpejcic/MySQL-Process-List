@@ -4,7 +4,7 @@ Donate link: https://plugins.club/wordpress/mysql-process-list-wordpress-plugin/
 Tags: MySQL, process list, query
 Requires at least: 5.8
 Tested up to: 6.1.1
-Stable tag: 1.0
+Stable tag: 1.1
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -41,6 +41,10 @@ This is new version 1.0
 
 
 == Changelog ==
+ 
+ = 1.1 =
+
+* Added I18N support as reported by https://www.alexclassroom.com/
  
 = 1.0 =
 
